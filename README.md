@@ -1,2 +1,2 @@
-# bubblegum
-PHP Framework
+# BUBBLEGUM 🍬 FRAMEWORK
+Created by LankryF. Docs must be here soon!
