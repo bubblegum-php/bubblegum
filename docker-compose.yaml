@@ -1,0 +1,28 @@
+name: bubblegum
+
+services:
+  nginx:
+    image : "nginx:stable-alpine"
+    restart: always
+    ports:
+      - "8000:80"
+    volumes:
+      - ./docker/nginx.conf:/etc/nginx/conf.d/default.conf:ro
+      - ./:/var/www
+
+  php:
+    build:
+      context: ./docker/
+      dockerfile: php.dockerfile
+    volumes:
+      - ./:/var/www
+    working_dir: /var/www/
+
+  postgresql:
+    image: postgres:16-alpine
+    ports:
+      - "5432:5432"
+    env_file:
+      - ./.env
+    volumes:
+      - ./docker/data:/var/lib/postgresql/data
