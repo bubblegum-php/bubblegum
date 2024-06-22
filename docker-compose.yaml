@@ -16,6 +16,8 @@ services:
       dockerfile: php.dockerfile
     env_file:
       - ./.env
+    environment:
+      PREVENT_ENV_FILE_LOADING: true
     volumes:
       - ./:/var/www
     working_dir: /var/www/

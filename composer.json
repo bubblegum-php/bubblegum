@@ -35,7 +35,8 @@
     "require-dev": {
         "bubblegum-php/bubblegum-core": "@dev",
         "bubblegum-php/bubblegum-controllers": "@dev",
-        "bubblegum-php/bubblegum-views": "@dev"
+        "bubblegum-php/bubblegum-views": "@dev",
+        "bubblegum-php/bubblegum-environment": "@dev"
     },
     "repositories": [
         {
@@ -49,6 +50,10 @@
         {
             "type": "git",
             "url": "https://github.com/bubblegum-php/bubblegum-views.git"
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/bubblegum-php/bubblegum-environment.git"
         }
     ]
 }
