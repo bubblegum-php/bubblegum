@@ -30,13 +30,16 @@
         ]
     },
     "require": {
-        "php": "^8.0"
+        "php": "^8.0",
+        "ext-pdo": "*"
     },
     "require-dev": {
         "bubblegum-php/bubblegum-core": "@dev",
         "bubblegum-php/bubblegum-controllers": "@dev",
         "bubblegum-php/bubblegum-views": "@dev",
-        "bubblegum-php/bubblegum-environment": "@dev"
+        "bubblegum-php/bubblegum-environment": "@dev",
+        "bubblegum-php/bubblegum-db": "@dev",
+        "bubblegum-php/bubblegum-db-migrations": "@dev"
     },
     "repositories": [
         {
@@ -54,6 +57,14 @@
         {
             "type": "git",
             "url": "https://github.com/bubblegum-php/bubblegum-environment.git"
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/bubblegum-php/bubblegum-db.git"
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/bubblegum-php/bubblegum-db-migrations.git"
         }
     ]
 }
