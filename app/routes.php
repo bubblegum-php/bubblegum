@@ -17,4 +17,5 @@ Route::get('/', View::class)->to('welcome')
         'username' => 'User',
         'link' => 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
     ]);
-Route::post('/', TestController::class);
+Route::get('/{nameOfPathVariable}', TestController::class);
+Route::post('/{variableHere}', TestController::class);
