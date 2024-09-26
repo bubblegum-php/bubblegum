@@ -42,7 +42,8 @@
         "bubblegum-php/bubblegum-db": "@dev",
         "bubblegum-php/bubblegum-db-migrations": "@dev",
         "bubblegum-php/bubblegum-db-models": "@dev",
-        "bubblegum-php/bubblegum-candyman": "@dev"
+        "bubblegum-php/bubblegum-candyman": "@dev",
+        "bubblegum-php/bubblegum-middlewares": "@dev"
 
     },
     "repositories": [
@@ -77,6 +78,10 @@
         {
             "type": "git",
             "url": "https://github.com/bubblegum-php/bubblegum-candyman.git"
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/bubblegum-php/bubblegum-middlewares.git"
         }
     ]
 }

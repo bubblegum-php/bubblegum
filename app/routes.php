@@ -8,6 +8,9 @@ use Bubblegum\Views\View;
 // use Bubblegum controllers down here
 use App\Controllers\TestController;
 
+// use Bubblegum middlewares down here
+use App\Middlewares\TestMiddleware;
+
 // Bubblegum routes down here
 Route::get('/', View::class)->to('welcome')
     ->withData([
@@ -17,5 +20,9 @@ Route::get('/', View::class)->to('welcome')
         'username' => 'User',
         'link' => 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
     ]);
-Route::get('/{nameOfPathVariable}', TestController::class);
+
+Route::get('/{nameOfPathVariable}',
+    wrap(TestController::class, TestMiddleware::class)
+);
+
 Route::post('/{variableHere}', TestController::class);
