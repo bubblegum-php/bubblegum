@@ -12,6 +12,11 @@ __Bubblegum__ is a lightweight, modular [PHP](https://www.php.net/) framework th
 - __Efficiency__: Remove unnecessary components to optimize performance.
 - __Extensibility__: Create your own modules and extensions to enhance functionality.
 
+## Install
+__Using composer__ `php create-project bubblegum-php/bubblegum myproject`
+
+__Using git__ `git clone https://github.com/bubblegum-php/bubblegum.git`
+
 ## Modules
 
 - [__CORE__](https://github.com/bubblegum-php/bubblegum-core) 🍬 The core module that connects all other modules and provides a pre-built routing system.
@@ -21,6 +26,7 @@ __Bubblegum__ is a lightweight, modular [PHP](https://www.php.net/) framework th
 - [__DB__](https://github.com/bubblegum-php/bubblegum-db) 🍬 Offers database integration with PostgreSQL.
   - [__DB-MODELS__](https://github.com/bubblegum-php/bubblegum-db-models) 🍬 Provides models for efficient interaction with database entities.
   - [__DB-MIGRATIONS__](https://github.com/bubblegum-php/bubblegum-db-migrations) 🍬 Enables database schema management through migrations.
+- [__MIDDLEWARES__](https://github.com/bubblegum-php/bubblegum-middlewares) 🍬 Adds middlewares to wrap your components.
 
 __Or you always can create modules by yourself :)__
 
