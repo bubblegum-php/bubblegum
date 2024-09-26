@@ -35,7 +35,7 @@
         <div class="container">
             <h1>Support Developers</h1>
             <p>Great software is built by great teams. Let's support each other, innovate together, and turn challenges into opportunities!</p>
-            <a href="https://buymeacoffee.com/lankryf" class="button">By them a coffee</a>
+            <a href="https://buymeacoffee.com/lankryf" class="button">Buy them a coffee</a>
         </div>
     </div>
 </body>
@@ -46,7 +46,8 @@
         font-family: 'Arial', sans-serif;
         margin: 0;
         padding: 20px;
-        overflow: hidden;
+        overflow-x: hidden;
+        overflow-y: visible;
     }
     header {
         text-align: center;
