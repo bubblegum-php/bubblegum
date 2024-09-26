@@ -17,13 +17,13 @@ __Using composer__ `composer create-project bubblegum-php/bubblegum myproject`
 
 __Using git__ `git clone https://github.com/bubblegum-php/bubblegum.git`
 
-## Docker
+## Docker setup
 
-Effortlessly build your project using pre-configured Docker files with a simple command:
+1. There are two important environment files: `/.env` `/docker/database.env`. Create these files by following the example files located in the respective folders.
 
-`docker compose up --build`
+2. Effortlessly build your project using pre-configured Docker files with a simple command: `docker compose up --build`
 
-And then connect to http://localhost:8000/
+3. Connect to http://localhost:8666/
 
 ## Modules
 

@@ -11,7 +11,7 @@ use Bubblegum\Request;
 class TestController extends Controller
 {
     /**
-     * Testing json response for post http method
+     * Testing json response for get http method
      * @param string $nameOfPathVariable
      * @return array|string
      */
@@ -22,6 +22,13 @@ class TestController extends Controller
             'path_variable' => $nameOfPathVariable,
         ];
     }
+
+    /**
+     * Testing json response for post http method
+     * @param Request $request
+     * @param string $variableHere
+     * @return array|string
+     */
     public function store(Request $request, string $variableHere): array|string
     { // "store" is a default destination for POST http method
         return [
