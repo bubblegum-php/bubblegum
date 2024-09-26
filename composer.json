@@ -37,27 +37,5 @@
         "bubblegum-php/bubblegum-db-migrations": "1.0.*",
         "bubblegum-php/bubblegum-db-models": "1.0.*",
         "bubblegum-php/bubblegum-middlewares": "1.0.*"
-    },
-    "repositories": [
-        {
-            "type": "git",
-            "url": "https://github.com/bubblegum-php/bubblegum-controllers.git"
-        },
-        {
-            "type": "git",
-            "url": "https://github.com/bubblegum-php/bubblegum-views.git"
-        },
-        {
-            "type": "git",
-            "url": "https://github.com/bubblegum-php/bubblegum-db-migrations.git"
-        },
-        {
-            "type": "git",
-            "url": "https://github.com/bubblegum-php/bubblegum-db-models.git"
-        },
-        {
-            "type": "git",
-            "url": "https://github.com/bubblegum-php/bubblegum-middlewares.git"
-        }
-    ]
+    }
 }
