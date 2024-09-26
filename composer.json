@@ -1,0 +1,63 @@
+{
+    "name": "bubblegum-php/bubblegum",
+    "description": "Bubblegum.",
+    "keywords": [
+        "bubblegum",
+        "bubblegum-framework",
+        "framework"
+    ],
+    "homepage": "https://github.com/bubblegum-php/bubblegum",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "LankryF",
+            "email": "lankrf@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "source": "https://github.com/bubblegum-php/bubblegum"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/",
+            "Database\\": "database/"
+        }
+    },
+    "scripts": {
+        "serve": [
+            "Composer\\Config::disableProcessTimeout",
+            "@php -S localhost:8000 -t \"./public\""
+        ]
+    },
+    "require": {
+        "php": "^8.0",
+        "bubblegum-php/bubblegum-controllers": "1.0.*",
+        "bubblegum-php/bubblegum-views": "1.0.*",
+        "bubblegum-php/bubblegum-db-migrations": "1.0.*",
+        "bubblegum-php/bubblegum-db-models": "1.0.*",
+        "bubblegum-php/bubblegum-middlewares": "1.0.*"
+    },
+    "repositories": [
+        {
+            "type": "git",
+            "url": "https://github.com/bubblegum-php/bubblegum-controllers.git"
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/bubblegum-php/bubblegum-views.git"
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/bubblegum-php/bubblegum-db-migrations.git"
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/bubblegum-php/bubblegum-db-models.git"
+        },
+        {
+            "type": "git",
+            "url": "https://github.com/bubblegum-php/bubblegum-middlewares.git"
+        }
+    ]
+}

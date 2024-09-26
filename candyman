@@ -1,0 +1,12 @@
+<?php
+require_once "vendor/autoload.php";
+
+use Bubblegum\Candyman\Candyman;
+use Bubblegum\Environment;
+
+define("ROOT_PATH", getcwd() . DIRECTORY_SEPARATOR);
+
+Environment::loadIfNotPrevented(ROOT_PATH . '.env');
+
+
+Candyman::executeCommand(...array_slice($argv, 1));

@@ -1,0 +1,38 @@
+name: bubblegum
+
+services:
+  nginx:
+    image : "nginx:stable-alpine"
+    restart: always
+    ports:
+      - "8000:80"
+    depends_on:
+      - php
+    volumes:
+      - ./docker/nginx.conf:/etc/nginx/conf.d/default.conf:ro
+      - ./:/var/www
+
+  php:
+    build:
+      context: ./docker/
+      dockerfile: php.dockerfile
+    env_file:
+      - ./.env
+    environment:
+      PREVENT_ENV_FILE_LOADING: true
+    volumes:
+      - ./:/var/www
+    working_dir: /var/www/
+    depends_on:
+      - postgresql
+    extra_hosts:
+      - host.docker.internal:host-gateway # for linux
+
+  postgresql:
+    image: postgres:16-alpine
+    ports:
+      - "5432:5432"
+    env_file:
+      - ./docker/database.env
+    volumes:
+      - ./docker/data:/var/lib/postgresql/data
