@@ -23,6 +23,8 @@ Effortlessly build your project using pre-configured Docker files with a simple 
 
 `docker compose up --build`
 
+And then connect to http://localhost:8000/
+
 ## Modules
 
 - [__CORE__](https://github.com/bubblegum-php/bubblegum-core) 🍬 The core module that connects all other modules and provides a pre-built routing system.
