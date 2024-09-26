@@ -19,7 +19,7 @@ __Using git__ `git clone https://github.com/bubblegum-php/bubblegum.git`
 
 ## Docker setup
 
-1. There are two important environment files: `/.env` `/docker/.database.env`. Create these files by following the example files located in the respective folders.
+1. There are two important environment files: `/.env` `/docker/database.env`. Create these files by following the example files located in the respective folders.
 
 2. Effortlessly build your project using pre-configured Docker files with a simple command: `docker compose up --build`
 
