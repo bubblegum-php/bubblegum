@@ -13,7 +13,7 @@ __Bubblegum__ is a lightweight, modular [PHP](https://www.php.net/) framework th
 - __Extensibility__: Create your own modules and extensions to enhance functionality.
 
 ## Install
-__Using composer__ `php create-project bubblegum-php/bubblegum myproject`
+__Using composer__ `composer create-project bubblegum-php/bubblegum myproject`
 
 __Using git__ `git clone https://github.com/bubblegum-php/bubblegum.git`
 
