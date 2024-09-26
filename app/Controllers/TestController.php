@@ -19,13 +19,13 @@ class TestController extends Controller
     { // "index" is a default destination for GET http method
         return [
             'data' => 'Hello folks, this is a test information here. I am Bubblegum btw.',
-            'name_of_variable' => $nameOfPathVariable,
+            'path_variable' => $nameOfPathVariable,
         ];
     }
     public function store(Request $request, string $variableHere): array|string
     { // "store" is a default destination for POST http method
         return [
-            'name_of_variable' => $variableHere,
+            'path_variable' => $variableHere,
             'request' => $request->all()
         ];
     }
