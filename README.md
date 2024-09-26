@@ -17,6 +17,12 @@ __Using composer__ `composer create-project bubblegum-php/bubblegum myproject`
 
 __Using git__ `git clone https://github.com/bubblegum-php/bubblegum.git`
 
+## Docker
+
+Effortlessly build your project using pre-configured Docker files with a simple command:
+
+`docker compose up --build`
+
 ## Modules
 
 - [__CORE__](https://github.com/bubblegum-php/bubblegum-core) 🍬 The core module that connects all other modules and provides a pre-built routing system.
