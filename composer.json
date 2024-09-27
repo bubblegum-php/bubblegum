@@ -36,6 +36,6 @@
         "bubblegum-php/bubblegum-views": "1.0.*",
         "bubblegum-php/bubblegum-db-migrations": "1.0.*",
         "bubblegum-php/bubblegum-db-models": "1.0.*",
-        "bubblegum-php/bubblegum-middlewares": "1.0.*"
+        "bubblegum-php/bubblegum-middlewares": "1.1.*"
     }
 }
