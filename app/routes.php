@@ -9,6 +9,7 @@ use Bubblegum\Views\View;
 use App\Controllers\TestController;
 
 // use Bubblegum middlewares down here
+use Bubblegum\Middlewares\Wrapper;
 use App\Middlewares\TestMiddleware;
 
 // Bubblegum routes down here
@@ -22,7 +23,7 @@ Route::get('/', View::class)->to('welcome')
     ]);
 
 Route::get('/{nameOfPathVariable}',
-    wrap(TestController::class, TestMiddleware::class)
+    Wrapper::wrap(TestController::class, TestMiddleware::class)
 );
 
 Route::post('/{variableHere}', TestController::class);
