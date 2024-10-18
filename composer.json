@@ -1,6 +1,7 @@
 {
     "name": "bubblegum-php/bubblegum",
-    "description": "Bubblegum.",
+    "description": "Bubblegum FULL",
+    "version": "1.1",
     "keywords": [
         "bubblegum",
         "bubblegum-framework",
@@ -19,6 +20,9 @@
         "source": "https://github.com/bubblegum-php/bubblegum"
     },
     "autoload": {
+        "files": [
+            "app/Console/commands.php"
+        ],
         "psr-4": {
             "App\\": "app/",
             "Database\\": "database/"
@@ -36,6 +40,7 @@
         "bubblegum-php/bubblegum-views": "1.0.*",
         "bubblegum-php/bubblegum-db-migrations": "1.0.*",
         "bubblegum-php/bubblegum-db-models": "1.0.*",
-        "bubblegum-php/bubblegum-middlewares": "1.1.*"
+        "bubblegum-php/bubblegum-middlewares": "1.1.*",
+        "bubblegum-php/bubblegum-candyman": "1.0.*"
     }
 }
