@@ -1,7 +1,4 @@
 <?php
-
-namespace App\Routes;
-
 use Bubblegum\Routes\Route;
 use Bubblegum\Views\View;
 
